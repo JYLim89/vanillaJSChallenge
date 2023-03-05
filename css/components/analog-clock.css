@@ -1,0 +1,85 @@
+.analog-clock {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../../img/clock.png);
+    background-size: cover;
+    border: 4px solid #1f1f1f;
+    border-radius: 50%;
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+                inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+                0 15px 15px rgba(0, 0, 0, 0.3),
+                inset 0 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.analog-clock::before {
+    content: '';
+    position: absolute ;
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.analog-clock .analog-clock__hour,
+.analog-clock .analog-clock__min, 
+.analog-clock .analog-clock__sec {
+    position: absolute;
+}
+
+.analog-clock .analog-clock__hour, .analog-clock__hr{
+    width: 160px;
+    height: 160px;
+}
+
+.analog-clock .analog-clock__min, .analog-clock__mn{
+    width: 190px;
+    height: 190px;
+}
+
+.analog-clock .analog-clock__sec, .analog-clock__sc{
+    width: 230px;
+    height: 230px;
+}
+
+.analog-clock__hr, .analog-clock__mn, .analog-clock__sc {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.analog-clock__hr::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: black;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.analog-clock__mn::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100px;
+    background: black;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.analog-clock__sc::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: rgb(121, 15, 15);
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+}
+
+/* https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=jcosmoss&logNo=222038636749 */

@@ -1,0 +1,12 @@
+#today-date {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.column-left >div {
+    margin-bottom: 60px;
+}
+.time-header {
+    font-size: 40px;
+    font-weight: 600;
+}

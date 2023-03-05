@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Todo app.</title>
+</head>
+<body>
+    <main class="wrapper">
+        <header id="greeting" class="header">
+
+            <div id="greetingUser" class="header__column"></div>
+
+            <div id="digital-clock" class="header__column"></div>
+
+            <div id="weather" class="header__column">
+                <div class="weather__weather"></div>
+                <div class="weater__temperature"></div>
+            </div>
+
+        </header>
+
+        <div class="column column-left">
+            <div class="time-header">Today is</div>
+            <div id="today-date"></div>
+            <div class="analog-clock">
+                <div class="analog-clock__hour">
+                    <div class="analog-clock__hr" id="analog-clock__hr"></div>
+                </div>
+                <div class="analog-clock__min">
+                    <div class="analog-clock__mn" id="analog-clock__mn"></div>
+                </div>
+                <div class="analog-clock__sec">
+                    <div class="analog-clock__sc" id="analog-clock__sc"></div>
+                </div>
+            </div>
+
+            
+
+        </div>
+        <div class="column column-middle wrapper-middle">
+            <form id="todo-form">
+              <input class="todo__calendar todo__start" type="date" data-placeholder="Start date" required/>
+              ~
+              <input class="todo__calendar todo__end" type="date" data-placeholder="End date" required/>
+              <input class="todo__input" type="text" placeholder="Input To do"required/>
+            </form>
+            
+            <ul id="todo-list">
+              <div>Todo List</div>
+            </ul>
+            
+        </div>
+
+        <div class="column column-right">
+          <div class="calendar-header">Calendar</div>
+          <div class="calendar-wrap">
+                <div class="month-year">March 2023</div>              
+                <table class="calendar">
+                  <thead>
+                    <tr>
+                      <th class="day-title" scope="col">Sun</th>
+                      <th class="day-title" scope="col">Mon</th>
+                      <th class="day-title" scope="col">Tue</th>
+                      <th class="day-title" scope="col">Wed</th>
+                      <th class="day-title" scope="col">Thu</th>
+                      <th class="day-title" scope="col">Fri</th>
+                      <th class="day-title" scope="col">Sat</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="week">
+                      <td class="day prev-mon"><span class="day-number">26</span></td>
+                      <td class="day prev-mon"><span class="day-number">27</span></td>
+                      <td class="day prev-mon"><span class="day-number">28</span></td>
+                      <td class="day"><span class="day-number">1</span></td>
+                      <td class="day"><span class="day-number">2</span></td>
+                      <td class="day"><span class="day-number">3</span></td>
+                      <td class="day"><span class="day-number">4</span></td>
+                    </tr>
+                    <tr class="week">
+                      <td class="day"><span class="day-number">5</span></td>
+                      <td class="day"><span class="day-number">6</span></td>
+                      <td class="day"><span class="day-number">7</span></td>
+                      <td class="day"><span class="day-number">8</span></td>
+                      <td class="day"><span class="day-number">9</span></td>
+                      <td class="day"><span class="day-number">10</span></td>
+                      <td class="day"><span class="day-number">11</span></td>
+                    </tr>
+                    <tr class="week">
+                      <td class="day"><span class="day-number">12</span></td>
+                      <td class="day"><span class="day-number">13</span></td>
+                      <td class="day"><span class="day-number">14</span></td>
+                      <td class="day"><span class="day-number">15</span></td>
+                      <td class="day"><span class="day-number">16</span></td>
+                      <td class="day"><span class="day-number">17</span></td>
+                      <td class="day"><span class="day-number">18</span></td>
+                    </tr>
+                    <tr class="week">
+                      <td class="day"><span class="day-number">19</span></td>
+                      <td class="day"><span class="day-number">20</span></td>
+                      <td class="day"><span class="day-number">21</span></td>
+                      <td class="day"><span class="day-number">22</span></td>
+                      <td class="day"><span class="day-number">23</span></td>
+                      <td class="day"><span class="day-number">24</span></td>
+                      <td class="day"><span class="day-number">25</span></td>
+                    </tr>
+                    <tr class="week">
+                      <td class="day"><span class="day-number">26</span></td>
+                      <td class="day"><span class="day-number">27</span></td>
+                      <td class="day"><span class="day-number">28</span></td>
+                      <td class="day"><span class="day-number">29</span></td>
+                      <td class="day"><span class="day-number">30</span></td>
+                      <td class="day"><span class="day-number">31</span></td>
+                      <td class="day next-mon"><span class="day-number">1</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+          </div>
+        </div>
+        <footer id="quotes" class="footer">
+            <div class="quotes__words"></div>
+            <div class="quotes__author"></div>
+        </footer>
+    </main>
+
+
+    <script src="js/index.js"></script>
+    <script src="js/todo.js"></script>
+
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

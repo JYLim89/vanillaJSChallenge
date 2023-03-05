@@ -1,0 +1,12 @@
+.column-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-header {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}

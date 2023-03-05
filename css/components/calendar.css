@@ -1,0 +1,87 @@
+.calendar-wrap {
+  width: 100%;
+  padding: 0.25em;
+  font-size: 4vw;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 1.5em;
+  box-shadow:
+    0 0.0625em 0.25em rgba(0,20,50,0.2),
+    0 0.5em 0.5em 0.125em rgba(0,20,50,0.1);
+}
+
+@media (min-width: 500px) {
+  .calendar-wrap {
+    width: 450px;
+    font-size: 1.25rem;
+  }
+}
+
+.month-year {
+  margin-bottom: 0.25em;
+  font-weight: 600;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.calendar {
+  table-layout: fixed;
+  width: 100%;
+  margin-bottom: 0.75em;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+
+.day-title {
+  width: 4em;
+  height: 4em;
+  vertical-align: middle;
+  font-weight: 600;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+}
+
+.day {
+  position: relative;
+  height: 3em;
+  font-weight: 600;
+}
+
+.day.today:focus .day-number::after {
+  width: 102%;
+  height: 102%;
+}
+
+.day:hover span.day-number {
+  color: #0288d1;
+}
+
+.day:first-child {
+  color: tomato;
+}
+.day:last-child {
+  color: cornflowerblue;
+}
+
+.day-number {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  border-radius: 50%;
+}
+
+
+
+.day.prev-mon .day-number,
+.day.next-mon .day-number {
+  color: rgba(0,0,0,0.3);
+}
+
+
+
+.calendar-wrap .reset {
+  display: block;
+}
